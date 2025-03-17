@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Provas - LFM Sports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LFM Sports</h1>
+                <p>Natação em Águas Abertas</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="calendario.html" class="active">Calendário</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Calendário de Provas</h1>
+            <p>Confira nossas próximas provas e garanta sua inscrição</p>
+        </div>
+    </section>
+
+    <section class="calendar-filter">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="filter-month">Mês:</label>
+                    <select id="filter-month">
+                        <option value="all">Todos</option>
+                        <option value="01">Janeiro</option>
+                        <option value="02">Fevereiro</option>
+                        <option value="03">Março</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Maio</option>
+                        <option value="06">Junho</option>
+                        <option value="07">Julho</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-location">Local:</label>
+                    <select id="filter-location">
+                        <option value="all">Todos</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="pr">Paraná</option>
+                        <option value="ba">Bahia</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-distance">Distância:</label>
+                    <select id="filter-distance">
+                        <option value="all">Todas</option>
+                        <option value="sprint">Sprint (até 1.5km)</option>
+                        <option value="middle">Média (1.5km a 3km)</option>
+                        <option value="long">Longa (acima de 3km)</option>
+                    </select>
+                </div>
+                <button id="filter-button" class="btn">Filtrar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="calendar-events">
+        <div class="container">
+            <div class="events-list">
+                <!-- Junho -->
+                <div class="month-divider">
+                    <h2><i class="fas fa-calendar-alt"></i> Junho 2025</h2>
+                </div>
+                
+                <div class="event-item" data-month="06" data-state="pr" data-distance="middle">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Jun</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Travessia Ilha do Mel</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Paranaguá, PR</p>
+                            <p><i class="fas fa-ruler-horizontal"></i> 2.5km e 5km</p>
+                            <p><i class="fas fa-users"></i> Categorias: Geral, PCD, Master (faixas etárias)</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Uma das mais belas travessias do litoral paranaense, com percurso que contorna a famosa Ilha do Mel. Prova com nível técnico moderado, recomendada para nadadores com experiência em águas abertas.</p>
+                        </div>
+                    </div>
+                    <div class="event-pricing">
+                        <h4>Lotes</h4>
+                        <ul class="pricing-list">
+                            <li class="pricing-item">
+                                <span class="pricing-name">1º Lote</span>
+                                <span class="pricing-date">até 15/04/2025</span>
+                                <span class="pricing-value">R$ 180,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">2º Lote</span>
+                                <span class="pricing-date">até 15/05/2025</span>
+                                <span class="pricing-value">R$ 220,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">3º Lote</span>
+                                <span class="pricing-date">até 05/06/2025</span>
+                                <span class="pricing-value">R$ 250,00</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-small">Inscreva-se</a>
+                    </div>
+                </div>
+
+                <!-- Julho -->
+                <div class="month-divider">
+                    <h2><i class="fas fa-calendar-alt"></i> Julho 2025</h2>
+                </div>
+                
+                <div class="event-item" data-month="07" data-state="rj" data-distance="sprint">
+                    <div class="event-date">
+                        <span class="day">23</span>
+                        <span class="month">Jul</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Desafio Arraial do Cabo</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Arraial do Cabo, RJ</p>
+                            <p><i class="fas fa-ruler-horizontal"></i> 1.5km e 3km</p>
+                            <p><i class="fas fa-users"></i> Categorias: Geral, PCD, Master (faixas etárias)</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Prova realizada nas águas cristalinas de Arraial do Cabo, conhecida como o "Caribe Brasileiro". Percurso que proporciona uma experiência única com visibilidade subaquática excepcional.</p>
+                        </div>
+                    </div>
+                    <div class="event-pricing">
+                        <h4>Lotes</h4>
+                        <ul class="pricing-list">
+                            <li class="pricing-item">
+                                <span class="pricing-name">1º Lote</span>
+                                <span class="pricing-date">até 23/05/2025</span>
+                                <span class="pricing-value">R$ 200,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">2º Lote</span>
+                                <span class="pricing-date">até 23/06/2025</span>
+                                <span class="pricing-value">R$ 240,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">3º Lote</span>
+                                <span class="pricing-date">até 13/07/2025</span>
+                                <span class="pricing-value">R$ 280,00</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-small">Inscreva-se</a>
+                    </div>
+                </div>
+
+                <!-- Agosto -->
+                <div class="month-divider">
+                    <h2><i class="fas fa-calendar-alt"></i> Agosto 2025</h2>
+                </div>
+                
+                <div class="event-item" data-month="08" data-state="sp" data-distance="long">
+                    <div class="event-date">
+                        <span class="day">10</span>
+                        <span class="month">Ago</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Volta à Ilhabela</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Ilhabela, SP</p>
+                            <p><i class="fas fa-ruler-horizontal"></i> 3km e 7km</p>
+                            <p><i class="fas fa-users"></i> Categorias: Geral, Master (faixas etárias)</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Um dos maiores desafios de natação em águas abertas do Brasil. A prova de 7km contorna parte da ilha, oferecendo um percurso técnico e desafiador para nadadores experientes.</p>
+                        </div>
+                    </div>
+                    <div class="event-pricing">
+                        <h4>Lotes</h4>
+                        <ul class="pricing-list">
+                            <li class="pricing-item">
+                                <span class="pricing-name">1º Lote</span>
+                                <span class="pricing-date">até 10/06/2025</span>
+                                <span class="pricing-value">R$ 250,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">2º Lote</span>
+                                <span class="pricing-date">até 10/07/2025</span>
+                                <span class="pricing-value">R$ 300,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">3º Lote</span>
+                                <span class="pricing-date">até 31/07/2025</span>
+                                <span class="pricing-value">R$ 350,00</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-small">Inscreva-se</a>
+                    </div>
+                </div>
+
+                <!-- Setembro -->
+                <div class="month-divider">
+                    <h2><i class="fas fa-calendar-alt"></i> Setembro 2025</h2>
+                </div>
+                
+                <div class="event-item" data-month="09" data-state="sc" data-distance="middle">
+                    <div class="event-date">
+                        <span class="day">14</span>
+                        <span class="month">Set</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Travessia Bombinhas</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Bombinhas, SC</p>
+                            <p><i class="fas fa-ruler-horizontal"></i> 1.5km e 3km</p>
+                            <p><i class="fas fa-users"></i> Categorias: Geral, PCD, Master (faixas etárias)</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Prova realizada em uma das mais belas praias do litoral catarinense. Percurso com águas calmas e transparentes, ideal para nadadores de todos os níveis.</p>
+                        </div>
+                    </div>
+                    <div class="event-pricing">
+                        <h4>Lotes</h4>
+                        <ul class="pricing-list">
+                            <li class="pricing-item">
+                                <span class="pricing-name">1º Lote</span>
+                                <span class="pricing-date">até 14/07/2025</span>
+                                <span class="pricing-value">R$ 180,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">2º Lote</span>
+                                <span class="pricing-date">até 14/08/2025</span>
+                                <span class="pricing-value">R$ 220,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">3º Lote</span>
+                                <span class="pricing-date">até 04/09/2025</span>
+                                <span class="pricing-value">R$ 250,00</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-small">Inscreva-se</a>
+                    </div>
+                </div>
+
+                <!-- Outubro -->
+                <div class="month-divider">
+                    <h2><i class="fas fa-calendar-alt"></i> Outubro 2025</h2>
+                </div>
+                
+                <div class="event-item" data-month="10" data-state="ba" data-distance="middle">
+                    <div class="event-date">
+                        <span class="day">19</span>
+                        <span class="month">Out</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Desafio Morro de São Paulo</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Morro de São Paulo, BA</p>
+                            <p><i class="fas fa-ruler-horizontal"></i> 2km e 4km</p>
+                            <p><i class="fas fa-users"></i> Categorias: Geral, Master (faixas etárias)</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Uma das provas mais esperadas do calendário, realizada nas águas quentes e cristalinas da Bahia. Percurso que contorna as belas praias de Morro de São Paulo.</p>
+                        </div>
+                    </div>
+                    <div class="event-pricing">
+                        <h4>Lotes</h4>
+                        <ul class="pricing-list">
+                            <li class="pricing-item">
+                                <span class="pricing-name">1º Lote</span>
+                                <span class="pricing-date">até 19/08/2025</span>
+                                <span class="pricing-value">R$ 220,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">2º Lote</span>
+                                <span class="pricing-date">até 19/09/2025</span>
+                                <span class="pricing-value">R$ 260,00</span>
+                            </li>
+                            <li class="pricing-item">
+                                <span class="pricing-name">3º Lote</span>
+                                <span class="pricing-date">até 09/10/2025</span>
+                                <span class="pricing-value">R$ 300,00</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-small">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calendar-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Informações Importantes</h3>
+                        <ul>
+                            <li>Todas as provas incluem kit do atleta com chip, touca e camiseta</li>
+                            <li>Medalha de participação para todos que completarem a prova</li>
+                            <li>Troféus para os três primeiros colocados de cada categoria</li>
+                            <li>Seguro atleta incluído na inscrição</li>
+                            <li>Hidratação e frutas na chegada</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Política de Cancelamento</h3>
+                        <ul>
+                            <li>Até 30 dias antes da prova: reembolso de 70% do valor</li>
+                            <li>De 29 a 15 dias antes da prova: reembolso de 50% do valor</li>
+                            <li>De 14 a 7 dias antes da prova: reembolso de 30% do valor</li>
+                            <li>Menos de 7 dias antes da prova: sem reembolso</li>
+                            <li>Transferência de inscrição: até 15 dias antes da prova</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>LFM Sports</h2>
+                    <p>Natação em Águas Abertas</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="calendario.html">Calendário</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@lfmsports.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LFM Sports. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
